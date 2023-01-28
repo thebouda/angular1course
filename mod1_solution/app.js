@@ -17,7 +17,7 @@ $scope.checkingElements = function(stringElems){
     length = stringElems.split(",").filter($scope.isEmpty).length
     if (length > 0 & length <=3){
         $scope.messageOut = "Enjoy"
-    }
+    }func
     if (length > 3){
         $scope.messageOut = "Too much!"
     }
