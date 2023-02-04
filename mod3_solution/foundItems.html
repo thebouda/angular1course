@@ -5,5 +5,8 @@
     <div> Description :{{element.description}} </div>
     <button ng-click = "narrow.removeItem($index, narrow.items)"> Don't want this one</button>
   </li>
+  <div ng-if = "narrow.items.length == 0" > Nothing found
+
+  </div>
 </ol>
 
