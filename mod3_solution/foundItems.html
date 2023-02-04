@@ -1,10 +1,14 @@
 <ol>
+  <div > {{narrow.items.length}} </div>
+
   <li ng-repeat="element in narrow.items">
+
     <div> Name :{{element.name}} </div>
     <div> Short name :{{element.short_name}} </div>
     <div> Description :{{element.description}} </div>
     <button ng-click = "narrow.removeItem($index, narrow.items)"> Don't want this one</button>
   </li>
-  <div ng-if = "narrow.items.length != 0" > Nothing found </div>
+  <div ng-if = "narrow.items.length == 0" > Nothing found </div>
+
 </ol>
 
