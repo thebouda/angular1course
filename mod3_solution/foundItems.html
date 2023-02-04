@@ -1,22 +1,11 @@
-<!-- <h3>Title: {{ list.myTitle }}</h3> -->
 <ol>
-  <li ng-repeat="item in list.found">
+  <li ng-repeat="element in narrow.items">
 
 
     <div> Name :{{element.name}} </div>
     <div> Short name :{{element.short_name}} </div>
     <div> Description :{{element.description}} </div>
-    <!-- <button ng-click="list.badRemove($index);">Bad Remove Item</button> -->
     <!-- <button ng-click="list.onRemove({index: $index});">Remove Item</button> -->
   </li>
 </ol>
-<!-- <div class="error" ng-if="list.cookiesInList()">WARNING! WARNING! COOKIES DETECTED!</div> -->
 
-
-<li ng-repeat=" element in narrow.found"> 
-    <div> Name :{{element.name}} </div>
-    <div> Short name :{{element.short_name}} </div>
-    <div> Description :{{element.description}} </div>
-    <button ng-click = "narrow.removeItem($index, narrow.found)"> Don't want this one</button>
-   </li>
-  <found-items found-items="...." on-remove="...."></found-items>
