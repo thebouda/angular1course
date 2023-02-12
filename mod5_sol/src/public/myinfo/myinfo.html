@@ -6,8 +6,11 @@
     <p> Last Name: {{myinfoCtrl.user.last_name}}</p>
     <p> Phone : {{myinfoCtrl.user.phone}}</p>
     <p> email : {{myinfoCtrl.user.email}}</p>
-    <p> favourite menu: {{myinfoCtrl.user.favoriteMenu}}</p>
+    <p> favourite menu : {{myinfoCtrl.user.favDish.name}}</p>
+    <p> favourite menu short: {{myinfoCtrl.user.favoriteMenu}}</p>
+    <p> favourite menu description: {{myinfoCtrl.user.favDish.description}}</p>
 
+    <img ng-src="images/menu/{{myinfoCtrl.user.menuSection}}/{{myinfoCtrl.user.menuSection}}{{myinfoCtrl.user.favoriteMenuPath}}.jpg">
   </div>
 
   <div ng-hide="myinfoCtrl.userPresent"> Not Signed Up Yet. 

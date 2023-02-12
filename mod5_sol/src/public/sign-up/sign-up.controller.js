@@ -19,6 +19,7 @@ function SignUpController(MenuService) {
 
     MenuService.getDish(sign.user.favoriteMenu).then(function(response){
       sign.user.favDish = response ;
+      // sign.user.menuType = ;
       if (sign.user.favDish ==null){
         sign.showError = true;
         sign.msg =  "No such menu number exists";

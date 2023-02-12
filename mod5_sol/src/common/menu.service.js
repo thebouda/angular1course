@@ -25,8 +25,9 @@ function MenuService($http, ApiPath) {
 
 
   service.getDish = function(dish){
-    var letter = dish.slice(0, 1);
-    var number = dish.slice(1,dish.length);
+    var letter = dish.match(/[a-zA-Z]+|[0-9]+/g)[0];
+    var number = dish.match(/[a-zA-Z]+|[0-9]+/g)[1];
+
     return $http
           .get(ApiPath +'/menu_items/'+ letter +'/menu_items/' + number + '.json')
           .then(function (response) {

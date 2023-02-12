@@ -18,8 +18,18 @@ function MyInfoController(MenuService) {
   if (!angular.equals(info.user,{})){
     // console.log(info.user)
     info.userPresent = true;  
-    // console.log("user present", info.userPresent)
+    info.user.menuSection = info.user.favoriteMenu.match(/[a-zA-Z]+|[0-9]+/g)[0];
+    info.user.favoriteMenuPath = info.user.favoriteMenu.match(/[a-zA-Z]+|[0-9]+/g)[1];
+    if (info.user.favoriteMenuPath == '0'){
+      info.user.favoriteMenuPath =''
+    }
+    console.log("fadish",info.user.favDish )
+    // info.user.menuDescription = 
+    // info.user.menuName = 
+
   }
+
+  
 
 
 
