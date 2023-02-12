@@ -57,11 +57,5 @@ function routeConfig ($stateProvider) {
     });
 
 
-    
-
-
-
-
-
 }
 })();
