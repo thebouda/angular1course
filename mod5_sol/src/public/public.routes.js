@@ -44,16 +44,21 @@ function routeConfig ($stateProvider) {
 
     .state('public.sign-up', {
       url: '/signup',
-      templateUrl: 'src/public/sign-up/sign-up.html'
-      // controller: 'MenuItemsController',
-      // controllerAs: 'menuItemsCtrl',
-      // resolve: {
-      //   menuItems: ['$stateParams','MenuService', function ($stateParams, MenuService) {
-      //     return MenuService.getMenuItems($stateParams.category);
-      //   }]
-      // }
-
+      templateUrl: 'src/public/sign-up/sign-up.html',
+      controller: 'SignUpController',
+      controllerAs: 'signupCtrl'
+    })
+    
+    .state('public.myinfo', {
+      url: '/myinfo',
+      templateUrl: 'src/public/sign-up/myinfo.html',
+      controller: 'MyInfoController',
+      controllerAs: 'myinfoCtrl'
     });
+    
+
+
+
 
 
 }
